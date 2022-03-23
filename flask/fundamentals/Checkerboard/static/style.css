@@ -1,0 +1,23 @@
+header{
+    font-size: 50px;
+    color: grey;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+}
+
+td{
+    width: 100px;
+    height: 100px;
+}
+
+table tr td{
+    width: 50px;
+    height: 50px;
+
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+    <title>Form</title>
+</head>
+<body>
+        <form class="box" action="/result" method='post'>
+            <header>Please submit your information!</header>
+            <input type="text" id="name" name="your_name" placeholder="What people call you?" value="{{yourName}}">
+            <select class="pet" name='pet'>
+                <option value='...'>Your Pet</option>
+                <option value='dog'>dog</option>
+                <option value='cat'>cat</option>
+                <option value='bird'>bird</option>
+                <option value='hamster'>hamster</option>
+                <option value='fish'>fish</option>
+            </select>
+            <select class="fav" name='fav'>
+                <option value='...'>Favorite thing to do with your pet</option>
+                <option value='play with my'>play with my pet</option>
+                <option value='walk with my'>walk with my pet</option>
+                <option value='sleep with my'>sleep with my pet</option>
+                <option value='eat with my'>eat with my pet</option>
+                <option value='bath with my'>bath with my pet</option>
+            </select>
+                <input type="text" id="comment" name="comment" placeholder="Message to your pet" value="{{comment}}">
+            <p>Please select</p>
+            <div class="group">
+                <input type="radio" id=.group name=choice value="I'm honest">
+                <label for="choice" >I'm honest</label>
+                <input type="radio" id="group" name="choice" value="I lied">
+                <label for="choice">I lied</label>
+                <input type="radio" id="group" name="choice" value="I'm not sure">
+                <label for="choice">I'm not sure</label>
+            </div>
+            <p>Please select</p>
+            <div class="group">
+                <input type="checkbox" id="group" name="confession" value="this is true!">
+                <label for="confession">this is true!</label><br>
+                <input type="checkbox" id="group" name="confession" value="this is not true!">
+                <label for="confession">this is not true!</label><br>
+            </div>
+            <button id="btn1">Submit</button>
+        </form>
+</body>
+</html>

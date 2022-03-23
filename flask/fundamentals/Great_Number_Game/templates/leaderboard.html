@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style3.css') }}">
+    <title>LeaderBoard</title>
+</head>
+<body>
+    <h3>LeaderBoard</h3>
+    <table>
+        <tbody>
+            <tr>
+                <td class="bold">Name</td>
+                <td class="bold">Attempt Time</td>
+            </tr>
+            {% for x in winner_info: %}
+            <tr>
+                <td>{{x}}</td>
+                <td>{{winner_info[x]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        
+    </table>
+    <button id="btn2" onclick="location.href = '/destroy_session'">Play again</button>
+</body>
+</html>

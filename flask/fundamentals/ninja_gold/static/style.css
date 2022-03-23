@@ -1,0 +1,36 @@
+*{
+    flex-direction: column;
+    display: flex;
+}
+
+.gold{
+    height: 50px;
+    width: 100px;
+    border: 5px;
+}
+
+.tile{
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: cursive;
+}
+
+form{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(37, 113, 156);
+    box-shadow: 5px 5px 2px black;
+    display: flex;
+    justify-content: center;
+}
+
+.activities{
+    height: 200px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+}

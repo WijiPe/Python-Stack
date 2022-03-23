@@ -1,0 +1,62 @@
+header, h1{
+    color:rgb(56, 64, 83);
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    font-size: 50px;
+    font-family: fantasy;
+    text-shadow: 1px 1px rgb(151, 88, 109);
+}
+
+.btns{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+#counter{
+    display: flex;
+    margin: 0px auto;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    padding:5px;
+    font-size: 30px;
+}
+
+#label{
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    font-family: fantasy;
+    font-size: 30px;
+    text-shadow: 0.5px 0.5px rgb(151, 88, 109);
+    color:rgb(56, 64, 83);
+}
+
+#btn1{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(233, 188, 235);
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    font-size: 20px;
+    font-family: fantasy;
+    color: rgb(51, 98, 151);
+    border-radius:2em;
+    box-shadow: 2px 2px;
+}
+
+#btn2{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(147, 211, 248);
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    font-size: 20px;
+    font-family:fantasy;
+    color: rgb(160, 99, 129);
+    border-radius:2em;
+    box-shadow: 2px 2px;
+    
+}

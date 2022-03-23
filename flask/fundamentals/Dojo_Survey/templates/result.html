@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+    <title>Result</title>
+</head>
+<body>
+    <header>Your information</header>
+    <table>
+        <tr>
+            <td>My name is</td>
+            <td>{{yourName}}</td>
+        </tr>
+        <tr>
+            <td>I love to eat</td>
+            <td>{{yourPet}}</td>
+        </tr>   
+        <tr>
+            <td>Favourite thing to do</td>
+            <td>{{fav}} {{yourPet}}</td>
+        </tr>
+        <tr>
+            <td>What I like to say after dinner</td>
+            <td>{{comment}}</td>
+        </tr>
+    </table>
+    <p>{{choice}} about this information and I believe {{confession}} </p>
+    
+</body>
+</html>

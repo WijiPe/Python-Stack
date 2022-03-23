@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <header>Counter</header>
+    <h1>{{session['number']}}</h1>
+    <div class="btns">
+        <button id="btn1" onclick="location.href = '/double'">Click</button>
+        <button id="btn2" onclick="location.href = '/reset'">Reset</button>
+    </div>
+    <form action="/count" method='post'>
+        <label for="counter" id="label">Add Number:</label><br>
+        <input type="text" id="counter" name="counter" value="{{counter}}"><br>
+    </form>
+</body>
+</html>
