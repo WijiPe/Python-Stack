@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+</head>
+<body>
+    <div>
+        <h1>New Books</h1>
+        <form action="/books/create" method="post" class="col-6 mx-auto" >
+            <div class="form-group">
+                <label for="title">Name: </label>
+                <input type="text" name="title" class="form-control">
+                <label for="num_of_pages">Number of pages: </label>
+                <input type="text" name="num_of_pages" class="form-control">
+            </div>
+            <input type="submit" value="Create" class="form-control">
+        </form>
+    </div>
+    <div>
+        <h2>All Books</h2>
+        <div>
+            {% for book in books %}
+            <ul>
+                <li><a href="/books/{{book.id}}" >{{book.title}}</a></li>
+            </ul>
+            {% endfor %}
+        </div>
+    </div>
+    <a href="/authors">Home</a>
+
+
+</body>
+</html>

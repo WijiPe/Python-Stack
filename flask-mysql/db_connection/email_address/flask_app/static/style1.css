@@ -1,0 +1,37 @@
+body{
+    font-family: monospace;
+    
+}
+
+.box {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    font-family: monospace;
+    color: rgb(50, 124, 146);
+    background-color: rgb(34, 39, 66);
+    padding: 0px 10px 50px 50px;
+    border-radius: 12%;
+}
+
+#name{
+    margin: 20px 0px 15px 0px;
+    width: 292px;
+    height: 20px;
+    font-family: monospace;
+    color: rgb(107, 103, 103);  
+}
+
+
+
+#btn1{
+    margin-top: 10px;
+    width: 300px;
+    height: 18px;
+    font-family: monospace;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

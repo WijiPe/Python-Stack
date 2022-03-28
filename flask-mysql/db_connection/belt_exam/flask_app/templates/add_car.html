@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Recipe</title>
+</head>
+<body>
+    <nav>
+        <header>Put Car Up For Sale</header>
+        <a class="btn btn-primary" href="/result" role="button">Dashboard</a>
+        <a class="btn btn-primary" href="/logout" role="button">Log out</a>
+    </nav>
+    <form class="box" action="/add" method='post'>
+        {% with messages = get_flashed_messages(with_categories=true) %}     <!-- declare a variable called messages -->
+            {% if messages %}                            <!-- check if there are any messages -->
+                {% for catagory, message in messages %}
+                    {% if catagory == 'name' %}     <!-- loop through the messages -->
+                        <p>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <label for="dojo">Price: </label>
+        <select name="price" id="price">
+            <option value="1000">1000</option>
+            <option value="2000">2000</option>
+            <option value="3000">3000</option>
+            <option value="4000">4000</option>
+            <option value="5000">5000</option>
+            <option value="6000">6000</option>
+        </select>
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model">
+        <label for="make">Make:</label>
+        <input type="text" id="make" name="make">
+        <label for="year">Year:</label>
+        <select name="year" id="year">
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2003">2003</option>
+        </select>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description">
+        <button id="btn1">Add</button>
+    </form>
+</body>
+</html>

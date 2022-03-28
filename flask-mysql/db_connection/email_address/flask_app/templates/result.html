@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+    <title>Success Page</title>
+</head>
+<body>
+    <header>The email address you entered () is a VALID email address! Thank you!</header>
+    <h1>Email Address Entered: </h1>
+    <table>
+        {% for result in results%}
+        <tr>
+            <td>{{result.email}}</td>
+            <td>{{result.created_at}}</td>
+            <td><a href="/delete/{{result.id}}">delete</a></td>
+        </tr>
+        {% endfor %}
+
+</body>
+</html>
+
